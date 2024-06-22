@@ -11,7 +11,6 @@
         <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/main.css">
-        <link href="./list_of_group.html">  <!--todo Обєднати два файли html-->
     </head>
 
     <body>
@@ -46,9 +45,9 @@
                 <div class="col-xs-12">
                     <!--Навігація-->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#">Студенти</a> </li>
+                        <li role="presentation"><a href="#">Студенти</a> </li>
                         <li role="presentation"><a href="#">Відвідування</a> </li>
-                        <li role="presentation"><a href="#">Групи</a> </li>
+                        <li role="presentation"  class="active"><a href="#">Групи</a> </li>
                     </ul>
                 </div>
             </div>
@@ -59,30 +58,26 @@
                 <div class="col-xs-12" id="content-column">
 
                     <!-- Start Message -->
-                    <h2>База Студентів</h2>
+                    <h2>Групи</h2>
 
-                    <!-- Add Studetn Button -->
-                    <a class="btn btn-primary" href="#">Додати Студента</a>
+                    <!-- Add Group Button -->
+                    <a class="btn btn-primary" href="#">Додати Групу</a>
 
                     <!-- Start Students Listing -->
                     <table class="table table-hover table-striped">
                         <thead>
                         <tr>
                             <th><a href="">№</a></th>
-                            <th>Фото</th>
-                            <th><a href="">Прізвище &uarr;</a></th>
-                            <th><a href="#">Ім'я</a></th>
-                            <th><a href="#">№ Білету</a></th>
+                            <th><a href="">Назва &uarr;</a></th> <!--todo Розібратись що таке &uarr -->
+                            <th><a href="#">Староста</a></th>
                             <th>Дії</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img height="40" width="40" src="./img/емодж.jpg" class="img-circle" /></td>
-                            <td><a title="Редагувати" href="#">Корост</a></td>
-                            <td><a title="Редагувати" href="#">Андрій</a></td>
-                            <td>3164</td>
+                            <td><a title="Редагувати" href="#">МтМ-22</a></td>
+                            <td><a title="Редагувати" href="#">Середа Артем</a></td>
                             <td>
                                 <div class="dropdown">
                                     <button class="btn btn-default dropdown-toggle"
@@ -107,10 +102,8 @@
                         <!--               -->
                         <tr>
                             <td>2</td>
-                            <td><img height="40" width="40" src="./img/емоджі.jpg" class="img-circle" /></td>
-                            <td><a title="Редагувати" href="#">Тихоненко</a></td>
-                            <td><a title="Редагувати" href="#">Максим</a></td>
-                            <td>254</td>
+                            <td><a title="Редагувати" href="#">МтМ-21</a></td>
+                            <td><a title="Редагувати" href="#">Тихоненко Максим</a></td>
                             <td>
                                 <div class="dropdown">
                                     <button class="btn btn-default dropdown-toggle"
@@ -135,10 +128,8 @@
                         <!--                -->
                         <tr>
                             <td>3</td>
-                            <td><img height="40" width="40" src="./img/емоджі ботан.jpg" class="img-circle" /></td>
-                            <td><a title="Редагувати" href="#">Будько</a></td>
-                            <td><a title="Редагувати" href="#">Іван</a></td>
-                            <td>4563</td>
+                            <td><a title="Редагувати" href="#">МтМ-23</a></td>
+                            <td><a title="Редагувати" href="#">Іванов Олександр</a></td>
                             <td>
                                 <div class="dropdown">
                                     <button class="btn btn-default dropdown-toggle"
@@ -165,12 +156,9 @@
                     <nav>
                         <ul class="pagination">
                             <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a> </li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a> </li>
-                            <li><a href="#">4</a> </li>
-                            <li><a href="#">5</a> </li>
-                            <li><a href="#">&raquo;</a> </li>
+                            <li class="active"><a href="#">1</a> </li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">Далі</a> </li>
                         </ul>
                     </nav>
                     <!-- End Students Listing-->
@@ -183,19 +171,13 @@
             <!--Start Footer -->
             <div class="row" id="footer">
                 <div class="col-xs-12">
-                    &copy; 2024 Сервіс Обліку Студентів
+                    &copy; 2024 Сервіс Бази Студентів
                 </div>
             </div>
             <!-- End Footer -->
 
         </div>
         <!-- End Conteiner -->
-
-<!--
-    <h1>Вітаю вас на нашій сторінці!</h1>  # Тег заголовка, видимий на сторінці як більший текст
-    <p>Поки тут порожньо, але незабаром ми матимемо список студентів.</p> # параграф тексту
--->
-
 
     <!--Javascripts Section-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
